@@ -71,12 +71,11 @@
     </section>
 
     <section class="application">
-        <div class="form">
-            <div class="form-name"></div>
-            <form action="">
+        <div class="application_form">
+            <form action="post">
                 <input type="text" placeholder="Full name">
-                <input type="text" placeholder="e-mail">
-                <input type="tel">
+                <input type="text" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="">
+                <input type="tel" name="phone" placeholder="phone number" required="">
                 <select name="" id="">
                     <option value="" selected="selected" disabled="disabled">type of move</option>
                     <option value="Studio">Studio</option>
@@ -91,7 +90,7 @@
                 <input type="text" placeholder="moving from">
                 <input type="text" placeholder="moving to">
                 <input type="text" placeholder="moving date">
-                <button class="btn" type="submit">Order now</button>
+                <button class="btn " type="submit">Order now</button>
             </form>
         </div>
         <div class="about-us">
@@ -115,59 +114,63 @@
     </section>
 
     <section class="any-questions">
-        <div class="text"></div>
-        <a href="tel:8776667577">(877) 666-7577</a>
+        <div class="any-questions_layout">
+            <div class="text">ANY QUESTIONS? PLEASE CALL US ON TOLL FREE</div>
+            <a href="tel:8776667577">(877) 666-7577</a>
+        </div>
     </section>
 
     <section class="services">
-        <div class="services_title">Our Services</div>
-        <div class="services_items">
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Local move</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+        <div class="services_layout">
+            <div class="services_title">Our Services</div>
+            <div class="services_items">
+                <div class="item">
+                    <div class="item_image item_image-1"></div>
+                    <div class="item_desc">
+                        <h2>Local move</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Long distance move</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+                <div class="item">
+                    <div class="item_image item_image-2"></div>
+                    <div class="item_desc">
+                        <h2>Long distance move</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Moving labor</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+                <div class="item">
+                    <div class="item_image item_image-3"></div>
+                    <div class="item_desc">
+                        <h2>Moving labor</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Apartment moving</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+                <div class="item">
+                    <div class="item_image item_image-4"></div>
+                    <div class="item_desc">
+                        <h2>Apartment moving</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Commercial moving</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+                <div class="item">
+                    <div class="item_image item_image-5"></div>
+                    <div class="item_desc">
+                        <h2>Commercial moving</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
-            </div>
-            <div class="services_item">
-                <div class="item_image"></div>
-                <div class="item_desc">
-                    <h2>Packing & Unpacking</h2>
-                    <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
-                        Moving Labor</p>
+                <div class="item">
+                    <div class="item_image item_image-6"></div>
+                    <div class="item_desc">
+                        <h2>Packing & Unpacking</h2>
+                        <p>Our Rates are all inclusive and guaranteed, No extra fees for gas, millage and materials.
+                            Moving Labor</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,35 +182,36 @@
         <div class="tips_title">
             <h2>We'll help you enjoy your new home</h2>
         </div>
-        <div class="tips_box">
-            <h3>6 Tips to Make Your Next Move Easier</h3>
-            <div class="tips_items">
-                <div class="tips_item">
-                    <span class="tips_number">1</span>
-                    <p class="tips_name">Label all boxes
-                        (i.e. fragile, kithcen, living room, etc)</p>
-                </div>
-                <div class="tips_item">
-                    <span class="tips_number">2</span>
-                    <p class="tips_name">Reserve Elevator</p>
-                </div>
-                <div class="tips_item">
-                    <span class="tips_number">3</span>
-                    <p class="tips_name">Reserve close parking spot</p>
-                </div>
-                <div class="tips_item">
-                    <span class="tips_number">4</span>
-                    <p class="tips_name">Use our FREE wardrobe
-                        boxes your clothes</p>
-                </div>
-                <div class="tips_item">
-                    <span class="tips_number">5</span>
-                    <p class="tips_name">Create a schedule so you
-                        don’t get overwhelmed</p>
-                </div>
-                <div class="tips_item">
-                    <span class="tips_number">6</span>
-                    <p class="tips_name">Pack a first-night box</p>
+        <div class="tips-container">
+            <div class="tips-box">
+                <h3>6 Tips to Make Your Next Move Easier</h3>
+                <div class="tips-box_items">
+                    <div class="item">
+                        <span class="item_number">1</span>
+                        <p class="item_name">Label all boxes<br>
+                            <span>(i.e. fragile, kithcen, living room, etc)</span></p>
+                    </div>
+                    <div class="item">
+                        <span class="item_number">2</span>
+                        <p class="item_name">Reserve Elevator</p>
+                    </div>
+                    <div class="item">
+                        <span class="item_number">3</span>
+                        <p class="item_name">Reserve close parking spot</p>
+                    </div>
+                    <div class="item">
+                        <span class="item_number">4</span>
+                        <p class="item_name">Use our FREE wardrobe boxes your clothes</p>
+                    </div>
+                    <div class="item">
+                        <span class="item_number">5</span>
+                        <p class="item_name">Create a schedule so you
+                            don’t get overwhelmed</p>
+                    </div>
+                    <div class="item">
+                        <span class="item_number">6</span>
+                        <p class="item_name">Pack a first-night box</p>
+                    </div>
                 </div>
             </div>
         </div>
