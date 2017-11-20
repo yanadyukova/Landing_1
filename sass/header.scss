@@ -1,0 +1,92 @@
+.header-page {
+  min-height: 210px;
+  padding-top: 14px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  &_layout {
+    width: 320px;
+    margin: 0 auto;
+  }
+  &_logo {
+    width: 186px;
+    height: 31px;
+    margin: 0 auto 20px;
+  }
+  &_menu {
+    min-width: 189px;
+    margin: 0 auto;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+        list-style: none;
+        font-size: 14px;
+        display: inline-block;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 14px;
+          width: 1px;
+          background-color: #002535;
+          transform: skew(-20deg);
+        }
+        &:last-child:after {
+          display: none;
+        }
+        a {
+          text-decoration: none;
+          padding: 10px;
+          color: #002535;
+          font-weight: 400;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  &_contacts {
+    text-align: center;
+    .phone {
+      position: relative;
+      display: inline-block;
+      width: 136px;
+      padding-left: 30px;
+      font-family: "Arial - Bold MT";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: 0;
+        background: url("../img/icon-phone.png") center no-repeat;
+      }
+    }
+    a {
+      width: 54px;
+      height: 14px;
+      color: #29abe2;
+      font-family: "Arial MT";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 67.99px;
+      text-decoration: underline;
+    }
+  }
+  &_button {
+    width: 190px;
+    height: 41px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.86;
+    color: #f2f2f2;
+    background-color: #ff0043;
+    font-family: "Arial - Bold MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+  }
+}
