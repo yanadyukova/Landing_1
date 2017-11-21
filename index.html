@@ -25,6 +25,13 @@
     <meta name="twitter:url" content="">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/calendar.0.9.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places&key=AIzaSyDsuYcboa2Go4vI2UK68brEf96pzUU7eMY"></script>
+    <link rel="stylesheet" type="text/css" href="assets/calendar.0.9.min.css">
+
 </head>
 <body>
     <header class="header-page">
@@ -72,7 +79,7 @@
 
     <section class="application">
         <div class="application_form">
-            <form action="post">
+            <form action="post" enctype="multipart/form-data" action="" data-toggle="validator" data-disable="false" data-focus="false">
                 <input type="text" placeholder="Full name">
                 <input type="text" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="">
                 <input type="tel" name="phone" placeholder="phone number" required="">
@@ -218,50 +225,207 @@
     </section>
 
     <section class="services-full-desc">
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Local move</div>
-            <div class="services_desc">Local move can be very difficult because all of your things need to be delivered to your new home. You need to have a reliable moving partner to trust on. Choosing the right Los Angeles moving company is a guarantee that your things will be delivered safe. Hippo Movers is ready to offer you the best solutions for your Local move. You will have your own personal manager who will discuss all the details of your move over the phone. The manager will plan every aspect of your transportation. Our experienced movers in Los Angles will take care of all your personal belongings during the packing and unpacking, disassembly and assembly, loading and unloading, as well as delivery.</div>
-            <div class="btn">Get a quote</div>
-        </div>
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Long Distance Movet</div>
-            <div class="services_desc">When moving Long Distance you need to have a reliable Los Angeles moving company that will save you from all the trouble. After all, Long Distance move requires a thorough planning to ensure that all your items will be delivered to a new place safe and on time. Hippo Movers guarantees a carefree and fast Long Distance move. With us, you are getting all-inclusive prices and overnight delivery services of up to $500.00 miles. You will be assigned a personal manager who will plan every step of your move. An account manager will come to your house and do an on-site free estimate to prepare a detailed plan of your move taking all the details into account. Our skilled movers in Los Angles will do the job fast and efficiently.</div>
-            <div class="btn">Get a quote</div>
-        </div>
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Moving Labor</div>
-            <div class="services_desc">If you decided to move using your own truck or a moving pod, our Los Angeles moving company can provide you with professional moving labor. In this case, our movers will help you organize the moving process using their dollies, tools, and materials for loading/unloading as well as packing/unpacking. You will get high quality services personalized for your own needs. Our movers in Los Angles are efficient, courteous, and professional. Your move will be safely handled from start to finish. Hippo Movers offers you full assistance from helping to organize your boxes to arranging your furniture in a new place. You can be sure that with us all you needs will be accommodated.</div>
-            <div class="btn">Get a quote</div>
-        </div>
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Apartment Moving</div>
-            <div class="services_desc">Are you about to move to a new apartment but don’t know where to start? First, find a reliable Los Angeles moving company that will transport all your things without any damages. The company will ensure efficient and on time delivery of all your belongings to a new location. When moving to a new apartment, Hippo Movers will assign you a personal manager who will do an estimate of the work and will prepare a detailed moving plan. The manager will contact the apartment building and arrange everything needed for the in/out move, like elevator reservation, insurance certificate, etc. Our movers in Los Angles will take good care of your things at each stage of the move.</div>
-            <div class="btn">Get a quote</div>
-        </div>
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Commercial Moving</div>
-            <div class="services_desc">Do you need help with your commercial move? Hippo Movers is a professional moving company in Los Angeles that handles a commercial move quickly, efficiently and safe. We will organize every step of your commercial move. A personal manager, who does the planning on-site and evaluates the cost of the works for free, is assigned for every order. He or she will arrange everything for your in/out commercial move. Every detail of the moving process will be taken into account (elevator reservation, floor covering, insurance, etc.). Our experienced movers in Los Angeles will finish the commercial move as quickly as possible and the work of the office won’t be disturbed. We work without days off and are ready to offer moving services after office hours.</div>
-            <div class="btn">Get a quote</div>
-        </div>
-        <div class="services_item">
-            <div class="services_image"></div>
-            <div class="services_name">Packing & Unpacking</div>
-            <div class="services_desc">When moving to a new place, packing of your furniture and personal items is very important. Thus, it is important to hire a reliable Los Angeles moving company that can provide packing and unpacking services to keep your things safe and sound during the delivery. Hippo Movers is pleased to offer you quality packing and unpacking services. Our company uses high-quality packing materials, specially designed for safe transportation of any personal belongings and office equipment. Our specialists will discuss with you what packing materials are best for your things to provide the service in accordance with your needs. At a new place, our skilled movers in Los Angeles will do a proper unpacking making sure the items are not broken.</div>
-            <div class="btn">Get a quote</div>
+        <div class="services-full-desc_items owl-carousel">
+            <div class="item">
+                <div class="item_image" style="background: url(img/1.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Local move</span></div>
+                <div class="item_desc">Local move can be very difficult because all of your things need to be delivered to your new home. You need to have a reliable moving partner to trust on. Choosing the right Los Angeles moving company is a guarantee that your things will be delivered safe. Hippo Movers is ready to offer you the best solutions for your Local move. You will have your own personal manager who will discuss all the details of your move over the phone. The manager will plan every aspect of your transportation. Our experienced movers in Los Angles will take care of all your personal belongings during the packing and unpacking, disassembly and assembly, loading and unloading, as well as delivery.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
+            <div class="item">
+                <div class="item_image" style="background: url(img/2.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Long Distance Movet</span></div>
+                <div class="item_desc">When moving Long Distance you need to have a reliable Los Angeles moving company that will save you from all the trouble. After all, Long Distance move requires a thorough planning to ensure that all your items will be delivered to a new place safe and on time. Hippo Movers guarantees a carefree and fast Long Distance move. With us, you are getting all-inclusive prices and overnight delivery services of up to $500.00 miles. You will be assigned a personal manager who will plan every step of your move. An account manager will come to your house and do an on-site free estimate to prepare a detailed plan of your move taking all the details into account. Our skilled movers in Los Angles will do the job fast and efficiently.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
+            <div class="item">
+                <div class="item_image" style="background: url(img/3.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Moving Labor</span></div>
+                <div class="item_desc">If you decided to move using your own truck or a moving pod, our Los Angeles moving company can provide you with professional moving labor. In this case, our movers will help you organize the moving process using their dollies, tools, and materials for loading/unloading as well as packing/unpacking. You will get high quality services personalized for your own needs. Our movers in Los Angles are efficient, courteous, and professional. Your move will be safely handled from start to finish. Hippo Movers offers you full assistance from helping to organize your boxes to arranging your furniture in a new place. You can be sure that with us all you needs will be accommodated.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
+            <div class="item">
+                <div class="item_image" style="background: url(img/4.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Apartment Moving</span></div>
+                <div class="item_desc">Are you about to move to a new apartment but don’t know where to start? First, find a reliable Los Angeles moving company that will transport all your things without any damages. The company will ensure efficient and on time delivery of all your belongings to a new location. When moving to a new apartment, Hippo Movers will assign you a personal manager who will do an estimate of the work and will prepare a detailed moving plan. The manager will contact the apartment building and arrange everything needed for the in/out move, like elevator reservation, insurance certificate, etc. Our movers in Los Angles will take good care of your things at each stage of the move.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
+            <div class="item">
+                <div class="item_image" style="background: url(img/5.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Commercial Moving</span></div>
+                <div class="item_desc">Do you need help with your commercial move? Hippo Movers is a professional moving company in Los Angeles that handles a commercial move quickly, efficiently and safe. We will organize every step of your commercial move. A personal manager, who does the planning on-site and evaluates the cost of the works for free, is assigned for every order. He or she will arrange everything for your in/out commercial move. Every detail of the moving process will be taken into account (elevator reservation, floor covering, insurance, etc.). Our experienced movers in Los Angeles will finish the commercial move as quickly as possible and the work of the office won’t be disturbed. We work without days off and are ready to offer moving services after office hours.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
+            <div class="item">
+                <div class="item_image" style="background: url(img/6.png) center/cover no-repeat"></div>
+                <div class="item_name"><span>Packing & Unpacking</span></div>
+                <div class="item_desc">When moving to a new place, packing of your furniture and personal items is very important. Thus, it is important to hire a reliable Los Angeles moving company that can provide packing and unpacking services to keep your things safe and sound during the delivery. Hippo Movers is pleased to offer you quality packing and unpacking services. Our company uses high-quality packing materials, specially designed for safe transportation of any personal belongings and office equipment. Our specialists will discuss with you what packing materials are best for your things to provide the service in accordance with your needs. At a new place, our skilled movers in Los Angeles will do a proper unpacking making sure the items are not broken.</div>
+                <div class="btn item_btn">Get a quote</div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="logo"></div>
-        <div class="contacts">
-            <div class="phone">(877) 666-7577</div>
-            <a href="">Call now</a>
+    <footer class="footer-page">
+        <div class="footer-page_layout">
+            <div class="footer-page_logo">
+                <img src="img/logo.png" alt="Movers in Downtown" width="186" height="31">
+            </div>
+            <div class="footer-page_contacts">
+                <div class="phone">(877) 666-7577</div>
+                <a href="tel:877666-7577">Call now</a>
+            </div>
         </div>
     </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/device.js"></script>
+    <!--    <script type="text/javascript" data-maskaformlite="u45624" src="https://cdn.hippomovers.com/js/jquery.inputmask.bundle.min.js"></script>-->
+
+    <script src="assets/calendar.0.9.min.js"></script>
+    <script>var cal_settings = {
+        selector: ".calend input",
+        readonlyField: "full",
+        cursorField: "pointer",
+        dateFormat: "mm.dd.yyyy",
+        position: "bottom right",
+        offset: 12,
+    };
+    </script>
+
+    <script>
+        if (device.tablet() || device.mobile()) {
+            $('[name="movingdate"]').attr('type', 'date');
+        }else{
+            cal_codeWidget();
+        }
+
+        var $form = $("form");
+        $form.validator().on("submit", function (e) {
+            var select = $(this).find('select'),
+                door = true, button = $(this).find('button');
+            if (select) {
+                if ((select.val() !== null) && select.val() !== 'false') {
+                    door = true;
+                    $(select).parent('div').removeClass('has-error has-danger');
+                } else {
+                    door = false;
+                    $(select).parent('div').addClass('has-error has-danger');
+                    $(select).css({'color' : '#D7244C'});
+                }
+            }
+
+            var url = $(this).attr('action'),
+                data = $(this).serialize(),
+                form = $(this),
+                $successMsg = $(this).find('.success-message'),
+                $errorMsg = $(this).find('.error-message');
+            if (!e.isDefaultPrevented() && (door === true)) {
+                $(button).attr('disabled', 'disabled');
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    dataType: 'json',
+                    success: function (msg) {
+                        if (msg['status'] == 'Success') {
+                            $('#modal').modal('hide');
+                            $('#smallModal').modal('show');
+
+                            $(form)[0].reset();
+                            $successMsg.show();
+                            $errorMsg.hide();
+                        } else {
+                            $errorMsg.show();
+                            $successMsg.hide();
+                        }
+
+                        $(button).removeAttr('disabled');
+                    },
+                    error: function () {
+                        $errorMsg.show();
+                        $successMsg.hide();
+                        $(button).removeAttr('disabled');
+                    }
+                });
+            } else {
+                e.preventDefault();
+                $errorMsg.hide();
+                $successMsg.hide();
+            }
+        });
+
+        $('.inner-addon select').on('focus', function () {
+            $(this).css({
+                'color': '#555'
+            });
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '[name="movingdate"]', function () {
+            $('#datepickers-container').children().css('display', 'block');
+        });
+        $(document).on('click', '.datepicker--cell-day', function () {
+            if (!$(this).hasClass('-disabled-')) {
+                $('#datepickers-container').children().removeClass('active').css('display', 'none');
+                $(this).find('input').blur();
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.7.0/jquery.geocomplete.min.js"></script>
+    <script>
+        $(function () {
+            $(".la-form-geocomplete").geocomplete();
+        });
+    </script>
+
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $("input[name='phone']").mask("+1 (999) 999-9999");
+    </script>
+
+
+    <script>
+
+        $(document).ready(function() {
+
+            $('a[href^="#"]').click(function(){
+                var el = $(this).attr('href');
+                var target = this.hash;
+                $('body,html').animate({scrollTop: $(el).offset().top}, 1500, function(){window.location.hash = target;});
+                return false;
+            });
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:45,
+                dots: true,
+                dotsEach: 1,
+//                nav:true,
+                items: 4,
+//                navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    761:{
+                        items:1
+                    },
+                    1300:{
+                        items:1
+                    }
+                }
+            });
+
+        });
+    </script>
+
 </body>
 </html>

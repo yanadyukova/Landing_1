@@ -1,0 +1,39 @@
+.footer-page {
+  min-height: 115px;
+  padding-top: 35px;
+  background-color: #f4f4f4;
+  &_logo {
+    width: 186px;
+    height: 31px;
+    margin: 0 auto 10px;
+  }
+  &_contacts {
+    text-align: center;
+    .phone {
+      position: relative;
+      display: inline-block;
+      width: 165px;
+      padding-left: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: 0;
+        background: url("../img/icon-phone.png") center no-repeat;
+      }
+    }
+    a {
+      width: 54px;
+      height: 14px;
+      color: #29abe2;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 67.99px;
+      text-decoration: underline;
+    }
+  }
+}
