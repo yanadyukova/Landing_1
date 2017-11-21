@@ -87,7 +87,7 @@ p {
     line-height: 41px; }
 
 .price {
-  background: url("../img/price_bg.png") bottom/contain no-repeat, linear-gradient(to bottom, #F4F4F4 0%, #FFFFFF 50%); }
+  background: url("../img/price_bg.png") bottom/contain no-repeat, linear-gradient(to bottom, #F4F4F4 0%, #FFFFFF 15%); }
   .price h1 {
     display: none; }
   .price-box {
@@ -150,38 +150,98 @@ p {
     text-transform: uppercase; }
 
 .application {
-  background-color: #ffffff; }
-  .application_form {
-    width: auto;
-    min-height: 326px;
-    margin: 51px 15px -45px;
+  background-color: #f4f4f4;
+  margin-bottom: 50px; }
+  .application-form {
     background-color: #ffffff;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.21);
-    text-align: center;
-    padding-top: 40px;
-    z-index: 2; }
-    .application_form input, .application_form select {
-      box-sizing: border-box;
-      min-width: 205px;
-      height: 25px;
-      margin: 0 43px 13px;
-      padding-left: 27px;
-      color: #eeeeee;
+    min-height: 291px; }
+    .application-form_layout {
+      position: relative;
+      width: 291px;
+      min-height: 326px;
+      margin: 51px auto -45px;
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.21);
+      text-align: center;
+      padding-top: 40px;
+      z-index: 2; }
+      .application-form_layout input, .application-form_layout select {
+        box-sizing: border-box;
+        min-width: 205px;
+        height: 25px;
+        margin: 0 43px 13px;
+        padding-left: 27px;
+        color: #eeeeee;
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 400;
+        border: 1px solid #eeeeee; }
+      .application-form_layout button {
+        display: block; }
+    .application-form_btn {
+      position: absolute;
+      width: 137px;
+      height: 36px;
+      background-color: #fc2b62;
+      color: #ffffff;
       font-family: Roboto;
-      font-size: 11px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: center;
+      border: none;
+      bottom: -18px;
+      left: 77px; }
+    .application-form_name {
+      position: absolute;
+      width: 223px;
+      height: 39px;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 17px;
       font-weight: 400;
-      border: 1px solid #eeeeee; }
-    .application_form button {
-      display: block; }
+      line-height: 39px;
+      text-transform: uppercase;
+      background-color: #002535;
+      left: 29px;
+      top: -19px; }
+  .application .about-us {
+    padding: 99px 0 30px;
+    z-index: -1;
+    width: 320px;
+    margin: 0 auto; }
+    .application .about-us_layout {
+      width: auto;
+      margin: 0 23px;
+      z-index: -1; }
+    .application .about-us_item {
+      font-family: Arial;
+      background-color: #ffffff;
+      min-height: 142px;
+      margin-bottom: 30px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: center;
+      padding: 18px;
+      box-sizing: border-box; }
+      .application .about-us_item:last-child {
+        margin-bottom: 0; }
+      .application .about-us_item .item_title {
+        color: #002535;
+        font-size: 18px;
+        margin-bottom: 15px; }
 
 .any-questions {
-  background: #f2f2f2 url("../img/any-questions.png") center no-repeat;
+  background: #f2f2f2 url("../img/any-questions1.png") center 80% no-repeat;
+  background-size: 70%;
   text-align: center;
   padding-top: 28px;
   margin-top: 10px;
-  min-height: 404px; }
+  min-height: 404px;
+  box-sizing: border-box; }
   .any-questions .text {
-    width: 282px;
+    min-width: 282px;
     margin: 0 auto 191px;
     color: #002535;
     font-size: 18px;
@@ -303,16 +363,16 @@ p {
         bottom: -11px;
         right: 81px; }
   .tips-container .tips-box {
-    min-width: 278px;
+    width: 278px;
     min-height: 548px;
     background-color: #002535;
     color: #ffffff;
-    margin: -75px 21px 30px;
+    margin: -60px auto 30px;
     padding-top: 20px;
     padding-left: 5px; }
     .tips-container .tips-box h3 {
       display: block;
-      width: 158px;
+      width: 160px;
       height: 37px;
       color: #ffffff;
       font-size: 18px;
@@ -323,31 +383,39 @@ p {
     .tips-container .tips-box_items {
       width: 243px;
       margin: 0 auto; }
-      .tips-container .tips-box_items .item {
-        display: -webkit-box;
-        display: flex;
-        height: 82px;
-        border-bottom: 1px solid #1a3b4a; }
-        .tips-container .tips-box_items .item_number {
-          position: relative;
-          width: 25px;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 21px; }
-          .tips-container .tips-box_items .item_number:after {
-            content: '';
-            position: absolute;
-            width: 19px;
-            height: 1px;
-            background-color: #ff0043;
-            bottom: 55px;
-            left: -3px; }
-        .tips-container .tips-box_items .item_name {
+      .tips-container .tips-box_items ul {
+        padding: 0; }
+        .tips-container .tips-box_items ul li {
+          display: table;
+          list-style: none;
+          border-bottom: 1px solid #1a3b4a;
           font-size: 16px;
           font-weight: 400;
           line-height: 18px;
-          padding-left: 10px; }
-          .tips-container .tips-box_items .item_name span {
+          padding: 30px 0;
+          width: 100%; }
+          .tips-container .tips-box_items ul li .item_number {
+            display: table-cell;
+            width: 30px;
+            margin-right: 10px;
+            vertical-align: middle; }
+            .tips-container .tips-box_items ul li .item_number span {
+              position: relative;
+              font-size: 22px;
+              font-weight: 400;
+              line-height: 21px; }
+              .tips-container .tips-box_items ul li .item_number span:after {
+                content: '';
+                position: absolute;
+                width: 19px;
+                height: 1px;
+                background-color: #ff0043;
+                bottom: -2px;
+                left: -3px; }
+          .tips-container .tips-box_items ul li span.item_desc {
+            display: table-cell;
+            margin-left: 10px; }
+          .tips-container .tips-box_items ul li span span {
             font-size: 13px; }
 
 .services-full-desc_items .item_image {
@@ -440,3 +508,78 @@ p {
       font-weight: 400;
       line-height: 67.99px;
       text-decoration: underline; }
+
+.reviews_title {
+  text-align: center;
+  margin: 0 auto;
+  width: 160px; }
+  .reviews_title h2 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.83px; }
+    .reviews_title h2:before {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 2px;
+      background-color: #ff1a56;
+      left: -45px;
+      top: 12px; }
+    .reviews_title h2:after {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 2px;
+      background-color: #ff1a56;
+      right: -45px;
+      top: 12px; }
+
+.reviews-slider_item {
+  width: 280px;
+  margin: 0 auto; }
+  .reviews-slider_item .item_avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto; }
+  .reviews-slider_item .item_name {
+    text-align: center; }
+    .reviews-slider_item .item_name span {
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 27px; }
+  .reviews-slider_item .item_info {
+    color: #000000;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center; }
+    .reviews-slider_item .item_info .people {
+      display: inline-block;
+      padding-left: 20px;
+      margin-right: 18px; }
+    .reviews-slider_item .item_info .raiting {
+      display: inline-block;
+      padding-left: 20px;
+      margin-right: 18px; }
+    .reviews-slider_item .item_info span {
+      color: #29abe2;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px; }
+    @media screen and (min-width: 374px) {
+  .any-questions {
+    background-size: 60%; } }
+    @media screen and (min-width: 429px) {
+  .any-questions {
+    background-size: 50%; } }
+    @media screen and (min-width: 515px) {
+  .any-questions {
+    background-size: 40%; } }
+    @media screen and (min-width: 650px) {
+  .any-questions {
+    background-size: 35%; } }

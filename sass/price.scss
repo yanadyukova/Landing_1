@@ -1,6 +1,10 @@
 .price {
   background: url("../img/price_bg.png") bottom/contain no-repeat,
-          linear-gradient(to bottom, #F4F4F4 0%, #FFFFFF 50%);
+          linear-gradient(to bottom, #F4F4F4 0%, #FFFFFF 15%);
+  //&_layout {
+  //  max-width: 425px;
+  //  margin: 0 auto;
+  //}
   h1 {
     display: none;
   }

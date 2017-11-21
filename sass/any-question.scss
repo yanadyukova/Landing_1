@@ -1,11 +1,13 @@
 .any-questions {
-  background: #f2f2f2 url("../img/any-questions.png") center no-repeat;
+  background: #f2f2f2 url("../img/any-questions1.png") center 80% no-repeat;
+  background-size: 70%;
   text-align: center;
   padding-top: 28px;
   margin-top: 10px;
   min-height: 404px;
+  box-sizing: border-box;
   .text {
-    width: 282px;
+    min-width: 282px;
     margin: 0 auto 191px;
     color: #002535;
     font-size: 18px;
@@ -26,5 +28,25 @@
     font-weight: 700;
     line-height: 50px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 374px){
+  .any-questions {
+    background-size: 60%;
+  }
+}
+@media screen and (min-width: 429px){
+  .any-questions {
+    background-size: 50%;
+  }
+}
+@media screen and (min-width: 515px){
+  .any-questions {
+    background-size: 40%;
+  }
+}
+@media screen and (min-width: 650px){
+  .any-questions {
+    background-size: 35%;
   }
 }

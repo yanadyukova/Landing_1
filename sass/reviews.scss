@@ -1,0 +1,81 @@
+.reviews {
+  &_layout {}
+  &_title {
+    text-align: center;
+    margin: 0 auto;
+    width: 160px;
+    h2 {
+      position: relative;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24.83px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 34px;
+        height: 2px;
+        background-color: #ff1a56;
+        left: -45px;
+        top: 12px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 34px;
+        height: 2px;
+        background-color: #ff1a56;
+        right: -45px;
+        top: 12px;
+      }
+    }
+  }
+  &-slider {
+    &_item {
+      width: 280px;
+      margin: 0 auto;
+      .item {
+        &_avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        &_name {
+          text-align: center;
+          span {
+            font-family: "Myriad Pro";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 27px;
+          }
+        }
+        &_info {
+          color: #000000;
+          font-family: "Myriad Pro";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: center;
+          .people {
+            display: inline-block;
+            padding-left: 20px;
+            margin-right: 18px;
+          }
+          .raiting {
+            display: inline-block;
+            padding-left: 20px;
+            margin-right: 18px;
+          }
+          span {
+            color: #29abe2;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+
+          }
+        }
+      }
+    }
+  }
+}
