@@ -467,12 +467,15 @@ p {
   text-align: center; }
   .services-full-desc_items .owl-dots .owl-dot {
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
     border: 1px solid #ff0043;
     border-radius: 50%;
-    margin: 10px 12px 40px 0; }
+    margin: 10px 12px 40px 0;
+    vertical-align: middle; }
     .services-full-desc_items .owl-dots .owl-dot.active {
+      width: 13px;
+      height: 13px;
       background-color: #ff0043; }
 
 .footer-page {
@@ -571,6 +574,67 @@ p {
       font-size: 16px;
       font-weight: 400;
       line-height: 27px; }
+  .reviews-slider_item .item-review {
+    position: relative;
+    width: 279px;
+    min-height: 309px;
+    border: 1px solid #d0d0d0;
+    margin: 40px auto 20px;
+    padding: 22px 13px;
+    box-sizing: border-box; }
+    .reviews-slider_item .item-review:before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+      border-top: 1px solid #d0d0d0;
+      border-left: 1px solid #d0d0d0;
+      top: -11px;
+      left: 130px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .reviews-slider_item .item-review .header_review .text {
+      display: inline-block;
+      color: #000000;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px; }
+    .reviews-slider_item .item-review .header_review .stars {
+      display: inline-block; }
+      .reviews-slider_item .item-review .header_review .stars span {
+        display: none; }
+    .reviews-slider_item .item-review .date {
+      color: #999999;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 20px; }
+    .reviews-slider_item .item-review .text-review {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: justify; }
+
+.reviews-slider .owl-dots {
+  margin: 0 auto;
+  text-align: center; }
+  .reviews-slider .owl-dots .owl-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ff0043;
+    border-radius: 50%;
+    margin: 10px 12px 40px 0;
+    vertical-align: middle; }
+    .reviews-slider .owl-dots .owl-dot.active {
+      width: 13px;
+      height: 13px;
+      background-color: #ff0043; }
     @media screen and (min-width: 374px) {
   .any-questions {
     background-size: 60%; } }
