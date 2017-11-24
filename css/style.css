@@ -647,3 +647,17 @@ p {
     @media screen and (min-width: 650px) {
   .any-questions {
     background-size: 35%; } }
+    @media screen and (min-width: 720px) {
+  .header-page {
+    position: relative;
+    min-height: 85px;
+    padding-top: 19px; }
+    .header-page_layout {
+      display: -webkit-box;
+      display: flex;
+      justify-content: space-around;
+      width: 720px;
+      margin: 0 auto; }
+    .header-page_menu {
+      position: absolute;
+      bottom: 0; } }

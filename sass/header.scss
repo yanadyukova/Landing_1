@@ -87,3 +87,28 @@
     line-height: 41px;
   }
 }
+
+
+@media screen and (min-width: 720px) {
+  .header-page {
+    position: relative;
+    min-height: 85px;
+    padding-top: 19px;
+    &_layout {
+      display: flex;
+      justify-content: space-around;
+      width: 720px;
+      margin: 0 auto;
+    }
+    &_logo {
+    }
+    &_menu {
+      position: absolute;
+      bottom: 0;
+    }
+    &_contacts {
+    }
+    &_button {
+    }
+  }
+}
