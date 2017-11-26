@@ -70,7 +70,7 @@
       color: #29abe2;
       font-size: 14px;
       font-weight: 400;
-      line-height: 67.99px;
+      line-height: 41px;
       text-decoration: underline;
     }
   }
@@ -91,24 +91,32 @@
 
 @media screen and (min-width: 720px) {
   .header-page {
-    position: relative;
     min-height: 85px;
     padding-top: 19px;
     &_layout {
+      position: relative;
       display: flex;
       justify-content: space-around;
-      width: 720px;
-      margin: 0 auto;
+      width: auto;
+      margin: 0 20px;
     }
     &_logo {
     }
     &_menu {
       position: absolute;
-      bottom: 0;
+      bottom: -7px;
     }
-    &_contacts {
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header-page {
+    &_layout {
+      max-width: 1340px;
+      margin: 0 auto;
     }
-    &_button {
+    &_menu {
+      position: relative;
     }
   }
 }

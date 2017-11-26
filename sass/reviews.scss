@@ -149,3 +149,124 @@
     }
   }
 }
+
+@media screen and (min-width: 720px) {
+  .reviews {
+    &_layout {}
+    &_title {
+      h2 {
+        &:before {
+          width: 51px;
+          left: -60px;
+        }
+        &:after {
+          width: 51px;
+          right: -60px;
+        }
+      }
+    }
+    &-slider {
+      &_item {
+        width: 590px;
+        margin: 0 auto;
+        .user_info {
+          width: 70px;
+          display: inline-block;
+          margin-right: 24px;
+        }
+        .item {
+          &_info {
+            color: #000000;
+            font-family: "Myriad Pro";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: center;
+            .people {
+              display: inline-block;
+              padding-left: 20px;
+              margin-right: 18px;
+            }
+            .raiting {
+              display: inline-block;
+              padding-left: 20px;
+              margin-right: 18px;
+            }
+            span {
+              color: #29abe2;
+              font-family: Arial;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 27px;
+            }
+          }
+          &-review {
+            display: inline-block;
+            width: 485px;
+            min-height: 220px;
+            border: 1px solid #d0d0d0;
+            margin: 25px auto 20px;
+            padding: 22px 13px;
+            box-sizing: border-box;
+            &:before {
+              border-bottom: 1px solid #d0d0d0;
+              border-top: none;
+              top: 45px;
+              left: -11px;
+            }
+            .header_review {
+              .text {
+                display: inline-block;
+                color: #000000;
+                font-family: "Myriad Pro";
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 27px;
+              }
+              .stars {
+                display: inline-block;
+                span {
+                  display: none;
+                }
+              }
+            }
+            .date {
+              color: #999999;
+              font-family: "Myriad Pro";
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 27px;
+              margin-bottom: 20px;
+            }
+            .text-review {
+              color: #000000;
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 20px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+      .owl-dots {
+        margin: 0 auto;
+        text-align: center;
+        .owl-dot {
+          display: inline-block;
+          width: 11px;
+          height: 11px;
+          border: 1px solid #ff0043;
+          border-radius: 50%;
+          margin: 10px 12px 40px 0;
+          vertical-align: middle;
+          &.active {
+            width: 13px;
+            height: 13px;
+            background-color: #ff0043;
+          }
+        }
+      }
+    }
+  }
+}

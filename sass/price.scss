@@ -20,15 +20,15 @@
       background-color: white;
       box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.25);
       font-family: Roboto;
-      padding-top: 54px;
       box-sizing: border-box;
       .item {
         &_title {
+          padding-top: 54px;
           font-size: 25px;
           font-weight: 700;
           text-transform: uppercase;
         }
-        &-desc {
+        &_desc {
           font-size: 16px;
           font-weight: 700;
         }
@@ -48,7 +48,9 @@
         }
       }
       &:nth-child(2) {
-        padding-top: 50px;
+        .item_title {
+          padding-top: 50px;
+        }
         &:before {
           content: 'BEST CHOISE';
           position: absolute;
@@ -77,5 +79,157 @@
     font-weight: 400;
     line-height: 55px;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .price {
+    background: #f4f4f4;
+    padding-top: 20px;
+    &_layout {
+      max-width: 800px;
+      background: url("../img/price-bg-tablet.png") right/contain no-repeat;
+      margin: 0 auto;
+    }
+    h1 {
+      width: 600px;
+      display: block;
+      color: #ff0043;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 23px;
+      margin-left: 20px;
+      margin-bottom: 23px;
+      margin-top: 0;
+      span {
+        color: #002535;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    &-box {
+      padding-top: 0;
+      margin-left: 20px;
+      text-align: left;
+      width: 600px;
+      &_item {
+        display: inline-block;
+        margin: 0 9px 0 0;
+        height: 135px;
+        width: 122px;
+        .item {
+          &_title {
+            padding-top: 41px;
+            font-size: 18px;
+          }
+          &_desc {
+            font-size: 12px;
+          }
+          &_price {
+            font-size: 22px;
+            span {
+              font-size: 22px;
+            }
+          }
+          &_condition {
+            font-size: 7px;
+            margin-top: 13px;
+          }
+        }
+        &:nth-child(2) {
+          .item_title {
+            padding-top: 21px;
+          }
+          &:before {
+            width: 90px;
+            height: 22px;
+            font-size: 10px;
+            line-height: 22px;
+            top: -11px;
+            left: 16px;
+          }
+        }
+      }
+    }
+    &_special {
+      width: 600px;
+      height: 55px;
+      background-color: transparent;
+      text-align: left;
+      line-height: 55px;
+      text-transform: uppercase;
+      margin-left: 90px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .price {
+    background: #f4f4f4;
+    padding-top: 0;
+    &_layout {
+      background: url("../img/price-bg-desktop.png") right/contain no-repeat;
+      max-width: 1340px;
+      margin: 0 auto;
+      padding-top: 85px;
+    }
+    h1 {
+      font-size: 60px;
+      line-height: 45px;
+      margin-bottom: 71px;
+      span {
+        font-size: 30px;
+        line-height: 27px;
+      }
+    }
+    &-box {
+      margin-bottom: 23px;
+      &_item {
+        width: 167px;
+        height: 185px;
+        margin: 0 20px 0 0;
+        .item {
+          &_title {
+            padding-top: 54px;
+            font-size: 25px;
+          }
+          &_desc {
+            font-size: 16px;
+          }
+          &_price {
+            font-size: 30px;
+            span {
+              font-size: 20px;
+            }
+          }
+          &_condition {
+            font-size: 10px;
+            margin-top: 13px;
+          }
+        }
+        &:nth-child(2) {
+          .item_title {
+            padding-top: 40px;
+          }
+          &:before {
+            width: 125px;
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            top: -15px;
+            left: 21px;
+          }
+        }
+      }
+    }
+    &_special {
+      height: 55px;
+      background-color: transparent;
+      font-size: 25px;
+      text-align: left;
+      line-height: 55px;
+      text-transform: uppercase;
+      margin-left: 120px;
+    }
   }
 }
