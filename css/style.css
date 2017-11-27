@@ -462,6 +462,24 @@ p {
   text-align: center;
   margin-bottom: 30px; }
 
+.services-full-desc_items .item-1 .item_image {
+  background: url("../img/1.png") center/cover no-repeat; }
+
+.services-full-desc_items .item-2 .item_image {
+  background: url("../img/2.png") center/cover no-repeat; }
+
+.services-full-desc_items .item-3 .item_image {
+  background: url("../img/3.png") center/cover no-repeat; }
+
+.services-full-desc_items .item-4 .item_image {
+  background: url("../img/4.png") center/cover no-repeat; }
+
+.services-full-desc_items .item-5 .item_image {
+  background: url("../img/5.png") center/cover no-repeat; }
+
+.services-full-desc_items .item-6 .item_image {
+  background: url("../img/6.png") center/cover no-repeat; }
+
 .services-full-desc_items .owl-dots {
   margin: 0 auto;
   text-align: center; }
@@ -850,6 +868,59 @@ p {
             margin-left: 10px; }
           .tips-container .tips-box_items ul li span span {
             font-size: 13px; }
+  .services-full-desc_items .item_image {
+    width: 680px;
+    min-height: 314px; }
+  .services-full-desc_items .item_name {
+    width: 680px;
+    padding: 33px 0 32px; }
+    .services-full-desc_items .item_name span {
+      font-size: 30px;
+      line-height: 30px; }
+      .services-full-desc_items .item_name span:after {
+        right: -75px;
+        top: 19px; }
+  .services-full-desc_items .item_desc {
+    width: 680px;
+    text-align: justify; }
+  .services-full-desc_items .item_btn {
+    width: 197px;
+    height: 51px;
+    margin: 0 auto;
+    background-color: #ff0043;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .services-full-desc_items .item-1 .item_image {
+    background: url("../img/tablet/services/1.png") center/contain no-repeat; }
+  .services-full-desc_items .item-2 .item_image {
+    background: url("../img/tablet/services/2.png") center/cover no-repeat; }
+  .services-full-desc_items .item-3 .item_image {
+    background: url("../img/tablet/services/3.png") center/cover no-repeat; }
+  .services-full-desc_items .item-4 .item_image {
+    background: url("../img/tablet/services/4.png") center/cover no-repeat; }
+  .services-full-desc_items .item-5 .item_image {
+    background: url("../img/tablet/services/5.png") center/cover no-repeat; }
+  .services-full-desc_items .item-6 .item_image {
+    background: url("../img/tablet/services/6.png") center/cover no-repeat; }
+  .services-full-desc_items .owl-dots {
+    margin: 0 auto;
+    text-align: center; }
+    .services-full-desc_items .owl-dots .owl-dot {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      border: 1px solid #ff0043;
+      border-radius: 50%;
+      margin: 10px 12px 40px 0;
+      vertical-align: middle; }
+      .services-full-desc_items .owl-dots .owl-dot.active {
+        width: 13px;
+        height: 13px;
+        background-color: #ff0043; }
   .reviews_title h2:before {
     width: 51px;
     left: -60px; }

@@ -47,6 +47,18 @@
         text-align: center;
         margin-bottom: 30px;
       }
+      &-1 {
+        .item_image {background: url("../img/1.png") center/cover no-repeat;}}
+      &-2 {
+        .item_image {background: url("../img/2.png") center/cover no-repeat;}}
+      &-3 {
+        .item_image {background: url("../img/3.png") center/cover no-repeat;}}
+      &-4 {
+        .item_image {background: url("../img/4.png") center/cover no-repeat;}}
+      &-5 {
+        .item_image {background: url("../img/5.png") center/cover no-repeat;}}
+      &-6 {
+        .item_image {background: url("../img/6.png") center/cover no-repeat;}}
     }
     .owl-dots {
       margin: 0 auto;
@@ -63,6 +75,77 @@
           width: 13px;
           height: 13px;
           background-color: #ff0043;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .services-full-desc {
+    &_items {
+      .item {
+        &_image {
+          width: 680px;
+          min-height: 314px;
+        }
+        &_name {
+          width: 680px;
+          padding: 33px 0 32px;
+          span {
+            font-size: 30px;
+            line-height: 30px;
+            &:after {
+              right: -75px;
+              top: 19px;
+            }
+          }
+        }
+        &_desc {
+          width: 680px;
+          text-align: justify;
+        }
+        &_btn {
+          width: 197px;
+          height: 51px;
+          margin: 0 auto;
+          background-color: #ff0043;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 51px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        &-1 {
+          .item_image {background: url("../img/tablet/services/1.png") center/contain no-repeat;}}
+        &-2 {
+          .item_image {background: url("../img/tablet/services/2.png") center/cover no-repeat;}}
+        &-3 {
+          .item_image {background: url("../img/tablet/services/3.png") center/cover no-repeat;}}
+        &-4 {
+          .item_image {background: url("../img/tablet/services/4.png") center/cover no-repeat;}}
+        &-5 {
+          .item_image {background: url("../img/tablet/services/5.png") center/cover no-repeat;}}
+        &-6 {
+          .item_image {background: url("../img/tablet/services/6.png") center/cover no-repeat;}}
+      }
+      .owl-dots {
+        margin: 0 auto;
+        text-align: center;
+        .owl-dot {
+          display: inline-block;
+          width: 11px;
+          height: 11px;
+          border: 1px solid #ff0043;
+          border-radius: 50%;
+          margin: 10px 12px 40px 0;
+          vertical-align: middle;
+          &.active {
+            width: 13px;
+            height: 13px;
+            background-color: #ff0043;
+          }
         }
       }
     }
