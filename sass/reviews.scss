@@ -270,3 +270,13 @@
     }
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    &_layout {
+      width: 1240px;
+      margin: 0 auto;
+    }
+  }
+}

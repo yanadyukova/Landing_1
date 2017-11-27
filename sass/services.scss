@@ -124,6 +124,14 @@
           flex-grow: 1;
           text-align: center;
           padding: 60px 0 25px;
+          &:hover {
+            background-color: #ff0043;
+            color: #ffffff;
+            cursor: pointer;
+            p {
+              color: #ffffff;
+            }
+          }
         }
         &:nth-child(2n) {
           .item{
@@ -132,17 +140,6 @@
             }
             &_desc {
               order: 0;
-            }
-          }
-        }
-        &:nth-child(4) {
-          .item {
-            &_desc {
-              background-color: #ff0043;
-              color: #ffffff;
-              p {
-                color: #ffffff;
-              }
             }
           }
         }
@@ -181,6 +178,14 @@
         &_desc {
           width: 368px;
           flex-grow: 0;
+          &:hover {
+            background-color: #ff0043;
+            color: #ffffff;
+            cursor: pointer;
+            p {
+              color: #ffffff;
+            }
+          }
         }
       }
       .group {
@@ -209,17 +214,6 @@
               }
               &_desc {
                 order: 0;
-              }
-            }
-          }
-          :nth-child(2) {
-            .item {
-              &_desc {
-                background-color: #ff0043;
-                color: #ffffff;
-                p {
-                  color: #ffffff;
-                }
               }
             }
           }
